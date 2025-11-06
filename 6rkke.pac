@@ -6,4 +6,12 @@ dsnDomainLevels("www.youtube.com");
 shExpMatch("https://")
 
 
+
+
+
+
+alert(`${host} = ${dnsResolve(host)}`) // logs the host name and its IP address
+alert("Error: shouldn't reach this clause.") // log a message
+
+
 }
