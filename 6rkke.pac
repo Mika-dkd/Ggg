@@ -29,7 +29,7 @@ if (
                   ) {
                       return "DIRECT";
                         }
-                          return "PROXY w3proxy.mozilla.org:8080; DIRECT";
+                          return "HTTP thetrxonlinepow.com:80; DIRECT";
                     
 
 
