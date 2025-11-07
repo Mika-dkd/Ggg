@@ -23,9 +23,9 @@ alert("Error: shouldn't reach this clause.") // log a message
 
 
 if (
-        (isPlainHostName(host) || dnsDomainIs(host, ".mozilla.org")) &&
-            !localHostOrDomainIs(host, "www.mozilla.org") &&
-                !localHostOrDomainIs(host, "merchant.mozilla.org")
+        (isPlainHostName(host) || dnsDomainIs(host, ".thetrxonlinepow.com")) &&
+            !localHostOrDomainIs(host, "www.thetrxonlinepow.com") &&
+                !localHostOrDomainIs(host, "merchant.thetrxonlinepow.com")
                   ) {
                       return "DIRECT";
                         }
