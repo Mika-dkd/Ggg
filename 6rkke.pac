@@ -14,4 +14,23 @@ alert(`${host} = ${dnsResolve(host)}`) // logs the host name and its IP address
 alert("Error: shouldn't reach this clause.") // log a message
 
 
+
+
+
+
+
+
+
+
+if (
+        (isPlainHostName(host) || dnsDomainIs(host, ".mozilla.org")) &&
+            !localHostOrDomainIs(host, "www.mozilla.org") &&
+                !localHostOrDomainIs(host, "merchant.mozilla.org")
+                  ) {
+                      return "DIRECT";
+                        }
+                          return "PROXY w3proxy.mozilla.org:8080; DIRECT";
+                    
+
+
 }
