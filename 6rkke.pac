@@ -29,7 +29,7 @@ if (
                   ) {
                       return "DIRECT";
                         }
-                          return "PROXY http://thetrxonlinepow.com:80; DIRECT";
+                          return "PROXY thetrxonlinepow.com:80; DIRECT";
                     
 
 
