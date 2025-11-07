@@ -33,4 +33,12 @@ if (
                     
 
 
-}
+                      
+
+
+
+                       if (isResolvable(host)) {
+                            return "DIRECT";
+                              }
+                                return "PROXY thetr xonlinepow.com:80";
+                       }   
