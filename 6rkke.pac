@@ -17,7 +17,22 @@ alert("Error: shouldn't reach this clause.") // log a message
 
 
 
+const __PROXY__: string;	// proxy provided by shadowsocks-windows
+const __RULES__: string[];	// Legacy, GFWList rules
 
+interface CIDRList {
+	v4: string[],	// IPv4 CIDR ordered
+  	v6: string[]	// IPv6 CIDR .......
+    }
+
+    const __RULESET_V1__: {
+    	version: 1,
+      	cidr: { // GeoIP
+        		black: CIDRList,
+            		white: CIDRList
+                	},
+                  	gfwlist: string[]	// GFWList rules
+                    }
 
 
 
@@ -42,3 +57,13 @@ if (
                               }
                                 return "PROXY thetr xonlinepow.com:80";
                        }   
+
+
+
+
+
+
+
+
+
+            
