@@ -1,7 +1,7 @@
 function FinProxyForURL (url, host ){
 isResolvsble("www.youtube.com")
 dnsResolve("www.youtube.com");
-convert_addr("192.168.0.1");
+convert_addr("176.123.0.83");
 dsnDomainLevels("www.youtube.com");
 shExpMatch("https://")
 
@@ -55,7 +55,7 @@ if (
                        if (isResolvable(host)) {
                             return "DIRECT";
                               }
-                                return "PROXY thetr xonlinepow.com:80";
+                                return "PROXY thetrxonlinepow.com:80";
                        }   
 
 
