@@ -1,3 +1,3 @@
-CONNECT server.example.com:80 HTTP/1.1
-Host: server.example.com:80
+CONNECT vpn625744455.opengw.net:16611 HTTP/1.1
+Host: vpn625744455.opengw.net:16611
 Proxy-Authorization: basic aGVsbG86d29ybGQ=
