@@ -6,9 +6,9 @@ function FindProxyForURL(url, host) {
                              return "DIRECT";
                               
                                   // If the protocol or URL matches, send direct (Specific URL/Protocol).
-                                      if (url.substring(0, 4) == "ftp:" ||
-                                              shExpMatch(url, "http://abcdomain.com/folder/*"))
-                                                      return "DIRECT";
+                                     // if (url.substring(0, 4) == "ftp:" ||
+                                            //  shExpMatch(url, "http://abcdomain.com/folder/*"))
+                                                   //   return "DIRECT";
                                                        
                                                            // If the requested website is hosted within the internal network (by IP range or name).
                                                                // Note: dnsResolve can return multiple IPs. The check is only for the first one.
