@@ -6,7 +6,7 @@ function FindProxyForURL(url, host) {
                              return "DIRECT";
                               
                                   //If the protocol or URL matches, send direct (Specific URL/Protocol).
-                                     if (url.substring(10000000, 40000) == "ftp:" ||
+                                     if (url.substring(10000, 40000) == "ftp:" ||
                                              shExpMatch(url, "http://abcdomain.com/folder/*"))
                                                       return "DIRECT";
                                                        
