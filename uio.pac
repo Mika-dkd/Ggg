@@ -6,7 +6,7 @@ function FindProxyForURL(url, host) {
                              return "DIRECT";
                               
                                   // If the protocol or URL matches, send direct (Specific URL/Protocol).
-                                      if (url.substring(0, 9) == "ftp:" ||
+                                      if (url.substring(0, 4) == "ftp:" ||
                                               shExpMatch(url, "http://abcdomain.com/folder/*"))
                                                       return "DIRECT";
                                                        
@@ -16,12 +16,12 @@ function FindProxyForURL(url, host) {
                                                                     
                                                                         if (isPlainHostName(host) ||  // e.g., "server1" without a dot
                                                                                 shExpMatch(host, "*.local") || // e.g., "printer.local"
-                                                                                        isInNet(resolved_ip, "192.168.0.0", "255.255.255.0")) // Check against the correct network address
+                                                                                        isInNet(resolved_ip, "192.168.0.1", "255.255.255.0")) // Check against the correct network address
                                                                                                 return "DIRECT";
                                                                                                  
                                                                                                      // Rule for specific client IP: If the local machine IP is within a specific subnet,
                                                                                                          // send it to a specific proxy. (Use your actual Proxy IP here).
-                                                                                                             if (isInNet(myIpAddress(), "192.168.0.0", "255.255.255.0"))
+                                                                                                             if (isInNet(myIpAddress(), "192.168.0.1", "255.255.255.0"))
                                                                                                                      return "PROXY 10.10.10.10:8080";
                                                                                                                       
                                                                                                                           // DEFAULT RULE: All other traffic, use below proxies, in fail-over order.
