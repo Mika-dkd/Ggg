@@ -16,7 +16,7 @@ function FindProxyForURL(url, host) {
                                                                     
                                                                         if (isPlainHostName(host) ||  // e.g., "server1" without a dot
                                                                                 shExpMatch(host, "*.local") || // e.g., "printer.local"
-                                                                                        isInNet(resolved_ip, "192.168.0.1", "0.0.0.0")) // Check against the correct network address
+                                                                                        isInNet(resolved_ip, "192.168.0.1", "252.0.0.0")) // Check against the correct network address
                                                                                                 return "DIRECT";
                                                                                                  
                                                                                                      // Rule for specific client IP: If the local machine IP is within a specific subnet,
