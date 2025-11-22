@@ -28,7 +28,7 @@ function FindProxyForURL(url, host) {
                                                                                                                           // DEFAULT RULE: All other traffic, use below proxies, in fail-over order.
                                                                                                                               // Replace 10.10.10.10 with your main proxy.
                                                                                                                                   // Replace 10.10.10.11 with a secondary fail-over proxy if available.
-                                                                                                                                  return "HTTPS speedtest3.tedata.net.prod.hosts.ooklaserver.net:8080/download?nocache=6d287a52-51ab-4ca1-87c6-515224f1a87a&size=25000000&guid=23e7f2Se-d3ab-4486-a2b8-3ca34273150; PROXY SecondaryProxyIP:Port";
+                                                                                                                                  return "HTTPS speedtest3.tedata.net.prod.hosts.ooklaserver.net:8080/download?nocache=6d287a52-51ab-4ca1-87c6-515224f1a87a&size=25000000&guid=23e7f2Se-d3ab-4486-a2b8-3ca34273150; HTTPS cname.super.so.proxy.cloudflare-gateway.com:8080";
                                                                                                                                        
 
 }
