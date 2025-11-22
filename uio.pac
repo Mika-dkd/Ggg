@@ -7,7 +7,8 @@ function FindProxyForURL(url, host) {
                               
                                   //If the protocol or URL matches, send direct (Specific URL/Protocol).
                                      if (url.substring(10000, 40000) == "ftp:" ||
-                                             shExpMatch(url, "http://abcdomain.com/folder/*"))
+                                           //  shExpMatch(url, "http://abcdomain.com/folder/*"))
+                                             shExpMatch( url, "https://raw.githubusercontent.com/openwrt/packages/refs/heads/master/sound/shine/Makefile/*"))
                                                       return "DIRECT";
                                                        
                                                            // If the requested website is hosted within the internal network (by IP range or name).
