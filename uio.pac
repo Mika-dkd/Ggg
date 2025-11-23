@@ -28,7 +28,7 @@ function FindProxyForURL(url, host) {
                                                                                                                           // DEFAULT RULE: All other traffic, use below proxies, in fail-over order.
                                                                                                                               // Replace 10.10.10.10 with your main proxy.
                                                                                                                                   // Replace 10.10.10.11 with a secondary fail-over proxy if available.
-                                                                                                                                  return "HTTPS speedtest3.tedata.net.prod.hosts.ooklaserver.net:8080;";
+                                                                                                                           //       return "HTTPS speedtest3.tedata.net.prod.hosts.ooklaserver.net:8080;";
                                                                                                                                        
 
 }
