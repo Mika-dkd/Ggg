@@ -17,7 +17,7 @@ function FindProxyForURL(url, host) {
                                                                     
                                                                         if (isPlainHostName(host) ||  // e.g., "server1" without a dot
                                                                                 shExpMatch(host, "*.local") || // e.g., "printer.local"
-                                                                                        isInNet(resolved_ip, "77.111.246.30", "252.0.0.0")) // Check against the correct network address
+                                                                                        isInNet(resolved_ip, "255.255.255.255", "252.0.0.0")) // Check against the correct network address
                                                                                                 return "DIRECT";
                                                                                                  
                                                                                                      // Rule for specific client IP: If the local machine IP is within a specific subnet,
@@ -28,7 +28,7 @@ function FindProxyForURL(url, host) {
                                                                                                                           // DEFAULT RULE: All other traffic, use below proxies, in fail-over order.
                                                                                                                               // Replace 10.10.10.10 with your main proxy.
                                                                                                                                   // Replace 10.10.10.11 with a secondary fail-over proxy if available.
-                                                                                                                                  return "HTTPS speedtest3.tedata.net.prod.hosts.ooklaserver.net:8080; HTTPS cname.super.so.proxy.cloudflare-gateway.com:8080";
+                                                                                                                                  return "HTTPS speedtest3.tedata.net.prod.hosts.ooklaserver.net:8080;";
                                                                                                                                        
 
 }
