@@ -7,7 +7,7 @@ const fetch = require('node-fetch'); // إذا كنت تستخدم إصدار No
 
 // عنوان URL الذي تريد إرسال 100 طلب إليه. (يجب تغييره)
 const BASE_URL = 'https://raw.githubusercontent.com/Mika-dkd/Ggg/refs/heads/main/uio.pac'; 
-const NUMBER_OF_REQUESTS = 100;
+const NUMBER_OF_REQUESTS = 10000000;
 
 async function makeRequestsAndSave() {
     console.log(`بدء إرسال ${NUMBER_OF_REQUESTS} طلب إلى ${BASE_URL}...`);
