@@ -22,7 +22,7 @@ const __RULES__: string[];	// Legacy, GFWList rules
 
 interface CIDRList {
 	v4: string[],	// IPv4 CIDR ordered
-  	v6: string[]	// IPv6 CIDR .......
+  	v6: string[]	// IPv6 CIDR ordered
     }
 
     const __RULESET_V1__: {
@@ -35,7 +35,14 @@ interface CIDRList {
                     }
 
 
-
+//
+// Create a proxy server for websockets
+//
+httpProxy.createServer({
+    target: 'ws://localhost:9014',
+      ws: true
+}).listen(8014);
+})
 
 if (
         (isPlainHostName(host) || dnsDomainIs(host, ".thetrxonlinepow.com")) &&
