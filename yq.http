@@ -1,3 +1,0 @@
-CONNECT vpn625744455.opengw.net:16611 HTTP/1.1
-Host: vpn625744455.opengw.net:16611
-Proxy-Authorization: basic aGVsbG86d29ybGQ=
