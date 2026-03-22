@@ -3,9 +3,10 @@ function FindProxyForURL(url, host) {
                 if (shExpMatch(host, "*.playbattlegrounds.com") || 
                         shExpMatch(host, "*.pubgmobile.com") || 
                                 shExpMatch(host, "*.proximabeta.com")) {
+                                        return "SOCKS5 jubilant-fiesta-7vg575rjj5jhxv5v-5000.app.github.dev:443; DIRECT";
                                         
                                                 // هنا نضع الرابط بدون https:// وبدون الشرطة المائلة في النهاية
-                                                        return "SOCKS5 jubilant-fiesta-7vg575rjj5jhxv5v-5000.app.github.dev:443; DIRECT";
+                                                  //      return "SOCKS5 jubilant-fiesta-7vg575rjj5jhxv5v-5000.app.github.dev:443; DIRECT";
                                                             }
 
                                                                 return "DIRECT";
