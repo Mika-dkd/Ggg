@@ -1,0 +1,20 @@
+name: Run Every Minute
+
+on:
+  schedule:
+      # هذا الكود يعني: كل دقيقة في كل ساعة في كل يوم
+          - cron: '* * * * *'
+            workflow_dispatch: # يسمح لك بتشغيل الكود يدوياً للتجربة
+
+            jobs:
+              execute-task:
+                  runs-on: ubuntu-latest
+                      steps:
+                            - name: Checkout Repository
+                                    uses: actions/checkout@v4
+
+                                          - name: Run Script
+                                                  run: |
+                                                            echo "تم تشغيل السكربت بنجاح في وقت: $(date)"
+                                                                      # هنا تضع الأوامر التي تريد تنفيذها كل دقيقة
+                                                                      
